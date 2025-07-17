@@ -288,6 +288,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Show/hide password requirements on focus/blur
+    passwordInput?.addEventListener('focus', function() {
+        const requirements = document.querySelector('.password-requirements');
+        if (requirements) {
+            requirements.style.display = 'block';
+            setTimeout(() => {
+                requirements.style.opacity = '1';
+                requirements.style.transform = 'translateY(0)';
+            }, 10);
+        }
+    });
+
+    passwordInput?.addEventListener('blur', function() {
+        const requirements = document.querySelector('.password-requirements');
+        if (requirements) {
+            setTimeout(() => {
+                requirements.style.opacity = '0';
+                requirements.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    requirements.style.display = 'none';
+                }, 300);
+            }, 200);
+        }
+    });
+
     // Registration form field validation
     firstNameInput?.addEventListener('blur', function() {
         const firstName = this.value.trim();
