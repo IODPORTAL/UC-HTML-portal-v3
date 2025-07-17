@@ -1,0 +1,618 @@
+/* Homepage Specific Styles */
+
+/* Homepage Hero */
+.homepage-hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('../assets/ltu-data-science-12.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-xl) 0 calc(var(--spacing-xl) - 15px);
+    position: relative;
+}
+
+.homepage-hero .hero-text h1 {
+    font-size: var(--h1-size);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.homepage-hero .hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Hero Reviews Widget */
+.hero-reviews {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: var(--spacing-xl);
+    padding-bottom: 2rem;
+    pointer-events: none;
+}
+
+.reviews-widget {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid var(--primary-red);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    pointer-events: all;
+}
+
+.reviews-widget h3 {
+    font-family: var(--font-headings);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.reviews-carousel {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.review-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    padding: 1rem 0;
+}
+
+.review-item.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.review-item.prev {
+    transform: translateX(-100%);
+}
+
+.review-stars {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.review-text {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+    min-height: 60px;
+}
+
+.review-author {
+    text-align: center;
+}
+
+.review-author strong {
+    display: block;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.review-author span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.8rem;
+}
+
+.reviews-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.review-nav-btn {
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-nav-btn:hover {
+    background: color-mix(in srgb, var(--primary-red) 90%, black);
+    transform: scale(1.1);
+}
+
+.review-dots {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--medium-gray);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.review-dot.active {
+    background: var(--primary-red);
+    transform: scale(1.3);
+}
+
+/* Programmes Overview */
+.programmes-overview {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-header h2 {
+    font-family: var(--font-headings);
+    font-size: var(--h2-size);
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.section-header p {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.programmes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: var(--spacing-xl);
+}
+
+.programme-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.programme-card:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-4px);
+}
+
+.programme-hero-bg {
+    height: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programme-content {
+    padding: 2rem;
+}
+
+.programme-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.programme-content h3 {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.programme-subtitle {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.programme-details {
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.detail-value {
+    color: var(--secondary-black);
+    font-weight: 600;
+}
+
+.programme-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    background: var(--light-gray);
+    color: var(--secondary-black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.programme-cta {
+    display: inline-block;
+    background: var(--primary-red);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    width: 100%;
+    text-align: center;
+}
+
+.programme-cta:hover {
+    background: color-mix(in srgb, var(--primary-red) 90%, black);
+    color: var(--white);
+}
+
+/* Success Stories */
+.success-stories {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: var(--spacing-xl);
+}
+
+.story-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.story-card:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-2px);
+}
+
+.story-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-content {
+    padding: 1.5rem;
+}
+
+.story-content h3 {
+    font-family: var(--font-headings);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-black);
+}
+
+.story-role {
+    color: var(--primary-red);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.story-quote {
+    color: var(--text-gray);
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.story-outcome {
+    border-top: 1px solid var(--medium-gray);
+    padding-top: 1rem;
+}
+
+.outcome-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.outcome-label {
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.outcome-value {
+    color: var(--secondary-black);
+    font-weight: 600;
+}
+
+.stories-cta {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+/* Partnership Section */
+.partnership-section {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(135deg, var(--secondary-black) 0%, #333333 100%);
+    color: var(--white);
+}
+
+.partnership-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.partnership-left h2 {
+    font-family: var(--font-headings);
+    font-size: var(--h2-size);
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.partnership-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.partnership-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.feature-content h4 {
+    font-family: var(--font-headings);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.feature-content p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.partnership-right {
+    text-align: center;
+}
+
+.partnership-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.uc-logo, .iod-logo {
+    max-height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.partnership-plus {
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.partnership-tagline {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
+/* Homepage FAQs */
+.homepage-faqs {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    margin-top: var(--spacing-xl);
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--white);
+}
+
+.faq-question:hover {
+    background: var(--light-gray);
+}
+
+.faq-question h3 {
+    font-family: var(--font-headings);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--secondary-black);
+    margin: 0;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--primary-red);
+    transition: var(--transition);
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.hero-content-wrapper {
+    width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .homepage-hero .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-reviews {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .reviews-widget {
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .programmes-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partnership-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .partnership-logos {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-hero .hero-text h1 {
+        font-size: 32px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .programmes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .programme-card {
+        margin: 0 1rem;
+    }
+}

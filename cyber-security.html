@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your career with UC's Cyber Security Bootcamp. 12-24 week intensive programme with job placement support and industry certification.">
+    <title>Cyber Security Bootcamp | University of Canterbury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script
+      data-memberstack-app="app_cm6h5s1zu000u0svrh92jezvr"
+      src="https://static.memberstack.com/scripts/v1/memberstack.js"
+      type="text/javascript"
+    >
+    </script>
+</head>
+<body class="cyber-security">
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <p>Limited places remaining in December Cohort - Secure your place today</p>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/uc-online-logo (1).svg" alt="University of Canterbury" />
+                    </a>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav class="header-nav">
+                    <a href="data-science.html" class="nav-link">Data Science & AI</a>
+                    <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                    <a href="software-engineering.html" class="nav-link">Software Engineering</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="case-studies.html" class="nav-link">Success Stories</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <!-- Show for logged out users -->
+                    <div data-ms-content="!members" class="auth-buttons">
+                        <a href="register.html" class="cta-button">Sign Up</a>
+                    </div>
+                    <!-- Show for logged in users -->
+                    <div data-ms-content="members" class="member-menu">
+                        <a href="portal.html" class="cta-button">Dashboard</a>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Section Navigation -->
+    <nav class="sticky-section-nav" id="stickySectionNav">
+        <div class="container">
+            <div class="section-nav-content">
+                <a href="#animated-text-section" class="section-nav-item active">Overview</a>
+                <a href="#programme-structure" class="section-nav-item">Structure</a>
+                <a href="#testimonials" class="section-nav-item">Reviews</a>
+                <a href="#syllabus" class="section-nav-item">Syllabus</a>
+                <a href="#countdown-section" class="section-nav-item">Next Cohorts</a>
+                <a href="#case-studies" class="section-nav-item">Case Studies</a>
+                <a href="#how-it-works" class="section-nav-item">Get Started</a>
+                <a href="#faqs" class="section-nav-item">FAQs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left-column">
+                        <div class="hero-text">
+                            <div class="cohort-badge">
+                                <span class="live-indicator"></span>
+                                Next Cohort: 8th September
+                            </div>
+                            <h1>Cyber Security<br>Industry Training Programme</h1>
+                        </div>
+                    </div>
+                    <div class="hero-form">
+                        <form id="heroForm" class="download-form">
+                            <h3>Download Course Outline</h3>
+                            <div class="form-separator"></div>
+                            <input type="email" name="email" placeholder="Email*" required>
+                            <input type="text" name="firstName" placeholder="First name*" required>
+                            <input type="tel" name="phone" placeholder="Phone Number*" required>
+                            <label class="privacy-consent">
+                                <input type="checkbox" required>
+                                <span>By submitting this form, I acknowledge that my information will be used in accordance with the Institute of Data's <a href="#">Privacy Policy</a>.</span>
+                            </label>
+                            <button type="submit" class="submit-btn">Download Course Outline</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Arrow -->
+            <div class="scroll-arrow" onclick="scrollToAnimatedSection()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 13L12 18L17 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 6L12 11L17 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logos -->
+    <section class="company-logos" id="company-logos">
+        <div class="container">
+            <h2>Where Our Graduates Work</h2>
+            <div class="logo-slider" id="logoSlider">
+                <div class="logo-track">
+                    <div class="logo-item"><img src="assets/brand_/uc-datacom-01.png" alt="Datacom" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-data-insight-02.png" alt="Data Insight" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-asb-04.png" alt="ASB Bank" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-at-07.png" alt="AT&T" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-pwc-08-1.png" alt="PwC" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-bnz-11.png" alt="BNZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-anz-12.png" alt="ANZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-stats-11.png" alt="Stats NZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-spark-07.png" alt="Spark" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-deloitte-22.png" alt="Deloitte" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-howick-17-1.png" alt="Howick" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Animated Text Section -->
+    <section class="animated-text-section" id="animated-text-section">
+        <div class="container">
+            <div class="animated-text-content">
+                <div class="course-metrics-container">
+                    <div class="course-metrics">
+                        <div class="course-metric-card">
+                            <div class="course-metric-value">
+                                <span class="weeks-number">12</span>
+                            </div>
+                            <div class="course-metric-badge">WEEKS</div>
+                        </div>
+                        <div class="course-metric-card">
+                            <div class="course-metric-value">4.8 ⭐</div>
+                            <div class="course-metric-badge">RATING</div>
+                        </div>
+                        <div class="course-metric-card">
+                            <div class="course-metric-value">Online</div>
+                            <div class="course-metric-badge">LOCATION</div>
+                        </div>
+                        <div class="course-metric-card">
+                            <div class="course-metric-value">93%</div>
+                            <div class="course-metric-badge">JOB SUCCESS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="animated-text" data-text="Defend the digital world in an era of evolving cyber threats. The future belongs to those who understand, protect, and secure critical systems and sensitive data.">
+                    <!-- Text will be dynamically split into spans -->
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programme Structure -->
+    <section class="programme-structure" id="programme-structure">
+        <div class="container">
+            <h2>Programme Structure</h2>
+            <div class="structure-flow">
+                <div class="structure-item">
+                    <div class="structure-icon">📚</div>
+                    <h3>Pre-work</h3>
+                    <p>Students complete curated pre-work as an interactive online learning experience designed to prepare every student with the required skills.</p>
+                </div>
+                <div class="structure-arrow">→</div>
+                <div class="structure-item">
+                    <div class="structure-icon">🎓</div>
+                    <h3>Intensive Training</h3>
+                    <p>Students undertake professional training from expert industry trainers to acquire the most sought-after practical skills.</p>
+                </div>
+                <div class="structure-arrow">→</div>
+                <div class="structure-item">
+                    <div class="structure-icon">💼</div>
+                    <h3>Job Outcomes</h3>
+                    <p>Career coaching and job placement support to land a role in one of the most sought-after fields in tech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Real Graduate Reviews</h2>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <h3>Natalia</h3>
+                        <p class="testimonial-programme">Certificate of Criminal Justice</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Thank you so much for the chance to take this course online. It has been a fantastic journey, and I've learned so many new things that will be useful in my career. The online course was perfect for me, and I believe it will be great for many other people too."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Carol</h3>
+                        <p class="testimonial-programme">Ngā Herenga</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"I loved that this course filled in so many of the gaps I had in my knowledge of the history of Aotearoa. I can't think of any other available ways that I could have accessed that would have taught me so much. I wish that I had done a course like this years ago."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Dean</h3>
+                        <p class="testimonial-programme">Professional Project Management</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"I had a blast learning online. The course material was straight to the point and the delivery was wonderful. The online learning environment was excellent, not to mention many real life examples and wonderful online learning resources."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Sarah</h3>
+                        <p class="testimonial-programme">Data Science & AI</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"The practical approach to learning data science was exactly what I needed. The instructors were knowledgeable and the hands-on projects really helped me understand complex concepts."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Michael</h3>
+                        <p class="testimonial-programme">Cyber Security</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"This course gave me the confidence to transition into cybersecurity. The real-world scenarios and expert guidance made all the difference in my career change."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <h3>Emma</h3>
+                        <p class="testimonial-programme">Software Engineering</p>
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"The comprehensive curriculum and supportive learning environment helped me land my dream job as a software developer. Highly recommended!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" id="testimonialPrev">‹</button>
+                <button class="testimonial-next" id="testimonialNext">›</button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Syllabus -->
+    <section class="syllabus" id="syllabus">
+        <div class="container">
+            <h2>Course Syllabus</h2>
+            <div class="syllabus-layout">
+                <div class="syllabus-sidebar">
+                    <div class="syllabus-themes">
+                        <div class="theme-item active" data-theme="foundations">
+                            <div class="theme-icon">🛡️</div>
+                            <div class="theme-content">
+                                <h3>Foundations</h3>
+                                <p>Security Fundamentals & Risk Management</p>
+                            </div>
+                        </div>
+                        <div class="theme-item" data-theme="offensive-defensive">
+                            <div class="theme-icon">⚔️</div>
+                            <div class="theme-content">
+                                <h3>Offensive & Defensive</h3>
+                                <p>Attack Techniques & Defense Strategies</p>
+                            </div>
+                        </div>
+                        <div class="theme-item" data-theme="advanced-security">
+                            <div class="theme-icon">🔒</div>
+                            <div class="theme-content">
+                                <h3>Advanced Security</h3>
+                                <p>Incident Response & Compliance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="syllabus-content-area">
+                    <div class="theme-content-section active" data-theme="foundations">
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">1</span>
+                                <h3>Cybersecurity Fundamentals</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>A game of defence and attack, ruled on both sides by economics</li>
+                                    <li>Compliance vs Security</li>
+                                    <li>Definitions and Language</li>
+                                    <li>Encryption</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">2</span>
+                                <h3>Risk Management</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Business Email Compromise</li>
+                                    <li>Intellectual Property Theft</li>
+                                    <li>Ransomware</li>
+                                    <li>Other notable Case Studies</li>
+                                    <li>Risk Treatment</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">3</span>
+                                <h3>Information Technology Foundations</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Networks and Network protocols</li>
+                                    <li>Authentication</li>
+                                    <li>Systems</li>
+                                    <li>Cloud Computing</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">4</span>
+                                <h3>Consulting and Interpersonal Skills</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Questioning technique</li>
+                                    <li>Critical thinking</li>
+                                    <li>Documentation</li>
+                                    <li>Presentation skills</li>
+                                    <li>Strategy & Project Management</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-content-section" data-theme="offensive-defensive">
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">5</span>
+                                <h3>Offensive Cybersecurity Concepts and Techniques</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>The Attacker's Mindset</li>
+                                    <li>Technical Attacks</li>
+                                    <li>Attack Software and Tooling</li>
+                                    <li>OWASP</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">6</span>
+                                <h3>The Defensive Mindset</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Economics of Defence</li>
+                                    <li>Defensive Architecture</li>
+                                    <li>Assets and Perimeters</li>
+                                    <li>Logs and Monitoring</li>
+                                    <li>Threat Intelligence</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">7</span>
+                                <h3>DevSecOps – Securing In-House Development</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Full life cycle of "home-grown" tools</li>
+                                    <li>Development Frameworks</li>
+                                    <li>Software Development Lifecycle</li>
+                                    <li>AppSec / DevSecOps</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-content-section" data-theme="advanced-security">
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">8</span>
+                                <h3>Incident Response</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Security vs ITIL</li>
+                                    <li>Incident Playbooks</li>
+                                    <li>Incident Management</li>
+                                    <li>Crisis Communication</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">9</span>
+                                <h3>Vendor & Supply Chain Security</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Corporate Supply Chain</li>
+                                    <li>Third Party Lifecycle</li>
+                                    <li>Case Studies</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                    <li>Capstone Project (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="syllabus-item">
+                            <div class="syllabus-header">
+                                <span class="module-badge">10</span>
+                                <h3>Compliance and Compliance Frameworks</h3>
+                                <span class="toggle-icon">+</span>
+                            </div>
+                            <div class="syllabus-content">
+                                <ul>
+                                    <li>Categories of Compliance</li>
+                                    <li>Governance vs Risk Assurance vs Compliance</li>
+                                    <li>Common Frameworks</li>
+                                    <li>Security Policies and Related Documents</li>
+                                    <li>Cyber Security Practice (ongoing)</li>
+                                    <li>Capstone Project (ongoing)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Cohort Countdown -->
+    <section class="countdown-section" id="countdown-section">
+        <div class="container">
+            <div class="countdown-content">
+                <div class="countdown-left">
+                    <h2>Next Programme Starts</h2>
+                    <div class="start-dates">
+                        <div class="date-item">
+                            <h3>Full-time</h3>
+                            <p>8 September 2025</p>
+                        </div>
+                        <div class="date-item">
+                            <h3>Part-time</h3>
+                            <p>8 September 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="countdown-right">
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="case-studies" id="case-studies">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <div class="case-studies-slider" id="caseStudiesSlider">
+                <div class="case-studies-track" id="caseStudiesTrack">
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="assets/grads/uc-case-study-bio-FELICIA-FEL.png" alt="Felicia's Career Transformation" />
+                            <div class="case-study-overlay">
+                                <button class="share-btn" aria-label="Share case study">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                        <polyline points="16,6 12,2 8,6"></polyline>
+                                        <line x1="12" y1="2" x2="12" y2="15"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Felicia Fel</h3>
+                            <p class="case-study-role">From Hospitality to Data Scientist</p>
+                            <p class="case-study-description">"The UC programme completely transformed my career. The practical approach and industry connections helped me transition from hospitality to landing my dream role in data science."</p>
+                            <div class="case-study-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">150%</span>
+                                    <span class="metric-label">Salary Increase</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">3 weeks</span>
+                                    <span class="metric-label">Job Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="assets/grads/uc-case-study-bio-avril.png" alt="Avril's AI Career" />
+                            <div class="case-study-overlay">
+                                <button class="share-btn" aria-label="Share case study">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                        <polyline points="16,6 12,2 8,6"></polyline>
+                                        <line x1="12" y1="2" x2="12" y2="15"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Avril</h3>
+                            <p class="case-study-role">From Administration to AI Engineer</p>
+                            <p class="case-study-description">"UC's comprehensive curriculum and career support helped me transition from administration to AI engineering. The real-world projects prepared me for the challenges I face in my new role."</p>
+                            <div class="case-study-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">200%</span>
+                                    <span class="metric-label">Salary Increase</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">1 week</span>
+                                    <span class="metric-label">Job Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-card">
+                        <div class="case-study-image">
+                            <img src="assets/grads/uc-case-study-bio-jan.png" alt="Jan's Data Career" />
+                            <div class="case-study-overlay">
+                                <button class="share-btn" aria-label="Share case study">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                        <polyline points="16,6 12,2 8,6"></polyline>
+                                        <line x1="12" y1="2" x2="12" y2="15"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="case-study-content">
+                            <h3>Jan Mazdin</h3>
+                            <p class="case-study-role">From IT Enthusiast to Cyber Security Leader</p>
+                            <p class="case-study-description">"I wanted to focus on cyber security, which had experienced a boom in the last few years. The Institute of Data Cyber Security programme gave me the local experience and credibility I needed."</p>
+                            <div class="case-study-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">180%</span>
+                                    <span class="metric-label">Salary Increase</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">1 week</span>
+                                    <span class="metric-label">Job Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="case-study-controls">
+                <button class="case-study-prev" id="caseStudyPrev">‹</button>
+                <button class="case-study-next" id="caseStudyNext">›</button>
+                <div class="case-study-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="eligibility">
+                    <span class="tab-number">1</span>
+                    <span class="tab-text">Check Eligibility</span>
+                </button>
+                <button class="tab-btn" data-tab="schedule">
+                    <span class="tab-number">2</span>
+                    <span class="tab-text">Select Cohort</span>
+                </button>
+                <button class="tab-btn" data-tab="payment">
+                    <span class="tab-number">3</span>
+                    <span class="tab-text">Application & Payments</span>
+                </button>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content-container">
+                
+                <!-- Eligibility Tab -->
+                <div class="tab-content active" data-tab="eligibility">
+                    <div class="tab-content-centered">
+                        <h3>Programme Eligibility</h3>
+                        <p>Review the key requirements for our Data Science & AI programme.</p>
+                        
+                        <div class="eligibility-overview">
+                            <div class="requirements-grid">
+                                <div class="requirement-item">
+                                    <div class="requirement-icon">📚</div>
+                                    <div class="requirement-text">
+                                        <h4>Education</h4>
+                                        <p>Diploma or higher qualification in any field</p>
+                                    </div>
+                                </div>
+                                <div class="requirement-item">
+                                    <div class="requirement-icon">🌐</div>
+                                    <div class="requirement-text">
+                                        <h4>English Proficiency</h4>
+                                        <p>IELTS 5.5 or equivalent English qualification</p>
+                                    </div>
+                                </div>
+                                <div class="requirement-item">
+                                    <div class="requirement-icon">💻</div>
+                                    <div class="requirement-text">
+                                        <h4>Technical Readiness</h4>
+                                        <p>Basic computer skills and access to reliable internet</p>
+                                    </div>
+                                </div>
+                                <div class="requirement-item">
+                                    <div class="requirement-icon">🎯</div>
+                                    <div class="requirement-text">
+                                        <h4>Commitment</h4>
+                                        <p>Dedication to complete 12-24 week intensive programme</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="eligibility-cta">
+                                <button class="check-eligibility-instantly-btn">Check Your Eligibility Instantly</button>
+                                <p>Get an instant assessment and personalized programme recommendations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Schedule Tab -->
+                <div class="tab-content" data-tab="schedule">
+                    <div class="tab-content-centered">
+                        <h3>Select Your Cohort</h3>
+                        <p>Choose the programme format and start date that works best for you.</p>
+                        
+                        <div class="schedule-comparison">
+                            <div class="schedule-card">
+                                <h4>Full-Time Programme</h4>
+                                <div class="schedule-duration">12 Weeks</div>
+                                <div class="schedule-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Schedule:</span>
+                                        <span class="detail-value">Monday - Friday</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">9:00 AM - 5:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Format:</span>
+                                        <span class="detail-value">Intensive Remote Training</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-card">
+                                <h4>Part-Time Programme</h4>
+                                <div class="schedule-duration">24 Weeks</div>
+                                <div class="schedule-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Schedule:</span>
+                                        <span class="detail-value">2 Evenings + 1 Saturday</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Time:</span>
+                                        <span class="detail-value">6:00 PM - 9:00 PM</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Format:</span>
+                                        <span class="detail-value">Flexible Remote Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cohort-dates">
+                            <h4>Upcoming Cohort Dates</h4>
+                            <div class="dates-table">
+                                <div class="table-header">
+                                    <div class="table-cell">Start Date</div>
+                                    <div class="table-cell">Full-Time</div>
+                                    <div class="table-cell">Part-Time</div>
+                                    <div class="table-cell">Early Bird</div>
+                                    <div class="table-cell">Action</div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">8 September 2025</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell early-bird">20% OFF</div>
+                                    <div class="table-cell"><button class="reserve-btn">Reserve Spot</button></div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">13 October 2025</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell early-bird">20% OFF</div>
+                                    <div class="table-cell"><button class="reserve-btn">Reserve Spot</button></div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">17 November 2025</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Standard</div>
+                                    <div class="table-cell"><button class="reserve-btn">Reserve Spot</button></div>
+                                </div>
+                                <div class="table-row">
+                                    <div class="table-cell">15 December 2025</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Available</div>
+                                    <div class="table-cell">Standard</div>
+                                    <div class="table-cell"><button class="reserve-btn">Reserve Spot</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Registration Tab -->
+                <div class="tab-content" data-tab="payment">
+                    <div class="tab-content-centered">
+                        <h3>Payment Options & Early Bird Offer</h3>
+                        <p>Register your account to view detailed payment information and access exclusive early bird discounts.</p>
+                        
+                        <div class="payment-preview">
+                            <div class="payment-highlights">
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">💳</div>
+                                    <div class="highlight-text">
+                                        <h4>Flexible Payment Plans</h4>
+                                        <p>Multiple payment options available including deposit plans and full payment discounts</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🎯</div>
+                                    <div class="highlight-text">
+                                        <h4>Early Bird Discount</h4>
+                                        <p>Save up to 20% when you enroll early for upcoming cohorts</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="highlight-item">
+                                    <div class="highlight-icon">🛡️</div>
+                                    <div class="highlight-text">
+                                        <h4>Money-Back Guarantee</h4>
+                                        <p>30-day money-back guarantee and various financing options available</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-cta">
+                                <button class="register-to-view-btn">Register Account to View Payment Options</button>
+                                <p>Access detailed pricing, payment plans, and exclusive early bird discounts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faqs" id="faqs">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <!-- FAQ Tab Navigation -->
+            <div class="faq-tab-navigation">
+                <button class="faq-tab-btn active" data-faq-tab="eligibility">
+                    <span class="faq-tab-text">Eligibility</span>
+                </button>
+                <button class="faq-tab-btn" data-faq-tab="schedule">
+                    <span class="faq-tab-text">Cohort</span>
+                </button>
+                <button class="faq-tab-btn" data-faq-tab="payment">
+                    <span class="faq-tab-text">Application & Payments</span>
+                </button>
+            </div>
+            
+            <div class="faq-accordion" id="faqAccordion">
+                
+                <!-- Eligibility FAQs -->
+                <div class="faq-group active" data-context="eligibility">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What if I don't meet all the requirements?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Don't worry! Our admissions team reviews each application individually. If you're missing some requirements, we may offer alternative pathways like additional pre-work or bridging courses to help you succeed.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I apply with a different educational background?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We welcome students from all educational backgrounds. Our programme is designed to accommodate learners from humanities, business, science, and other fields. Your diverse perspective can be a valuable asset.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Is there an age limit for the programme?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>There's no age limit! We've had successful students ranging from recent graduates to career changers in their 50s. What matters most is your commitment and enthusiasm to learn.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Do I need programming experience to start?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No prior programming experience is required. Our pre-work phase and early modules are designed to bring everyone up to speed, regardless of their technical background.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Schedule FAQs -->
+                <div class="faq-group" data-context="schedule">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What's the difference between full-time and part-time?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Full-time is 12 weeks, Monday-Friday, 9 AM-5 PM for intensive learning. Part-time is 24 weeks with evening classes (2 nights + 1 Saturday) to accommodate working professionals.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I switch between full-time and part-time?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Switches are possible before the programme starts, subject to availability. Once the course begins, changes are limited due to different pacing and scheduling requirements.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What if I miss classes due to personal commitments?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>All sessions are recorded and available for later viewing. We also offer catch-up sessions and one-on-one support to ensure you don't fall behind in your learning.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are classes held in local time zones?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we run multiple cohorts to accommodate different time zones. All times mentioned are in New Zealand Standard Time (NZST), but international students are welcome.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Payment FAQs -->
+                <div class="faq-group" data-context="payment">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>What payment methods do you accept?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We accept credit cards, bank transfers, and payment plans. For the deposit option, you can use any major credit card or arrange a bank transfer.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Can I get a refund if I need to withdraw?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a 30-day money-back guarantee from the programme start date. After this period, refunds are calculated on a pro-rata basis for unused portions of the course.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Are there scholarships or financial aid available?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We offer need-based scholarships and early bird discounts. Additionally, some students may be eligible for government funding or employer sponsorship programs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>How long is the early bird discount valid?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Early bird pricing (20% off) is available for enrollments made at least 6 weeks before the cohort start date. This discount applies to both payment options.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- New CTA Section -->
+    <section class="cta-urgent" id="cta-urgent">
+        <div class="container">
+            <div class="cta-urgent-content">
+                <h2>40% of employers already plan to shrink headcount where AI can automate tasks.</h2>
+                <p>Stay ahead of the curve. Get the skills you need to thrive in the AI era.</p>
+                <form class="cta-urgent-form" id="ctaUrgentForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-white">Download Course Outline</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="assets/uc-online-logo (1).svg" alt="University of Canterbury" class="footer-logo">
+                    <p>University of Canterbury<br>
+                    Private Bag 4800<br>
+                    Christchurch 8140<br>
+                    New Zealand</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><a href="data-science.html">Data Science & AI</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="software-engineering.html">Software Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Schedule a Call</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Programme Partner</h4>
+                    <img src="assets/iod_seal_tp_black_c.svg" alt="Institute of Data Seal" class="partner-seal">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© University of Canterbury. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Footer -->
+    <div class="sticky-cta" id="stickyCTA">
+        <div class="container">
+            <form class="sticky-form" id="stickyForm">
+                <div class="sticky-form-initial">
+                    <h3>Ready to transform your career?</h3>
+                    <button type="button" class="expand-form">Download Course Outline</button>
+                </div>
+                <div class="sticky-form-expanded">
+                    <div class="expanded-left">
+                        <button type="button" class="close-form" aria-label="Close form">×</button>
+                    </div>
+                    <div class="expanded-right">
+                        <input type="email" placeholder="Email*" required>
+                        <input type="text" placeholder="First name*" required>
+                        <input type="tel" placeholder="Phone number*" required>
+                        <button type="submit">Download Course Outline</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

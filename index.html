@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your career with UC's Tech Bootcamps. Choose from Data Science & AI, Cyber Security, or Software Engineering. Industry certification and job placement support.">
+    <title>UC Online Tech Bootcamps | University of Canterbury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script
+      data-memberstack-app="app_cm6h5s1zu000u0svrh92jezvr"
+      src="https://static.memberstack.com/scripts/v1/memberstack.js"
+      type="text/javascript"
+    >
+    </script>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <p>Limited places remaining in upcoming cohorts - Secure your place today</p>
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/uc-online-logo (1).svg" alt="University of Canterbury" />
+                    </a>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav class="header-nav">
+                    <a href="data-science.html" class="nav-link">Data Science & AI</a>
+                    <a href="cyber-security.html" class="nav-link">Cyber Security</a>
+                    <a href="software-engineering.html" class="nav-link">Software Engineering</a>
+                    <a href="events.html" class="nav-link">Events</a>
+                    <a href="case-studies.html" class="nav-link">Success Stories</a>
+                </nav>
+                
+                <div class="header-buttons">
+                    <!-- Show for logged out users -->
+                    <div data-ms-content="!members" class="auth-buttons">
+                        <a href="register.html" class="cta-button">Sign Up</a>
+                    </div>
+                    <!-- Show for logged in users -->
+                    <div data-ms-content="members" class="member-menu">
+                        <a href="portal.html" class="cta-button">Dashboard</a>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero homepage-hero" id="hero">
+        <div class="hero-content-wrapper">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left-column">
+                        <div class="hero-text">
+                            <h1>Transform Your Career with Industry-Leading Tech Training</h1>
+                            <p class="hero-subtitle">Choose from three cutting-edge programmes designed to launch your career in the most in-demand tech fields. Expert training, industry certification, and 93% job placement success.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="hero-reviews">
+                        <div class="reviews-widget">
+                            <h3>Graduate Reviews</h3>
+                            <div class="reviews-carousel" id="reviewsCarousel">
+                                <div class="review-item active">
+                                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="review-text">"The Institute of Data programme was more in-depth than any other programme. It gave me confidence to excel in my coding test."</p>
+                                    <div class="review-author">
+                                        <strong>Felicia F.</strong>
+                                        <span>Software Engineering Graduate</span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="review-text">"I wanted to focus on cyber security. The Institute of Data programme gave me the local experience I needed in New Zealand."</p>
+                                    <div class="review-author">
+                                        <strong>Jan M.</strong>
+                                        <span>Cyber Security Graduate</span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="review-text">"After 16 years in hairdressing, I realized my true calling was in tech. The opportunities afforded to me have been awesome."</p>
+                                    <div class="review-author">
+                                        <strong>Avril M.</strong>
+                                        <span>Software Engineering Graduate</span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="review-text">"Thank you for the chance to take this course online. I've learned so many new things that will be useful in my career."</p>
+                                    <div class="review-author">
+                                        <strong>Natalia K.</strong>
+                                        <span>Data Science Graduate</span>
+                                    </div>
+                                </div>
+                                <div class="review-item">
+                                    <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                                    <p class="review-text">"I had a blast learning online. The course material was straight to the point and the delivery was wonderful."</p>
+                                    <div class="review-author">
+                                        <strong>Dean M.</strong>
+                                        <span>Professional Development</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reviews-navigation">
+                                <button class="review-nav-btn prev" id="prevReview">‹</button>
+                                <div class="review-dots" id="reviewDots"></div>
+                                <button class="review-nav-btn next" id="nextReview">›</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logos -->
+    <section class="company-logos" id="company-logos">
+        <div class="container">
+            <h2>Where Our Graduates Work</h2>
+            <div class="logo-slider" id="logoSlider">
+                <div class="logo-track">
+                    <div class="logo-item"><img src="assets/brand_/uc-datacom-01.png" alt="Datacom" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-data-insight-02.png" alt="Data Insight" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-asb-04.png" alt="ASB Bank" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-at-07.png" alt="AT&T" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-pwc-08-1.png" alt="PwC" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-bnz-11.png" alt="BNZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-anz-12.png" alt="ANZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-stats-11.png" alt="Stats NZ" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-spark-07.png" alt="Spark" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-deloitte-22.png" alt="Deloitte" /></div>
+                    <div class="logo-item"><img src="assets/brand_/uc-howick-17-1.png" alt="Howick" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programmes Section -->
+    <section class="programmes-overview" id="programmes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Tech Career Path</h2>
+                <p>Three industry-leading programmes designed to transform your career in the most in-demand tech fields.</p>
+            </div>
+            
+            <div class="programmes-grid">
+                <div class="programme-card" data-programme="data-science">
+                    <div class="programme-hero-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/ltu-data-science-01.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="programme-content">
+                        <h3>Data Science & AI</h3>
+                        <p class="programme-subtitle">Master machine learning, AI, and data analytics to drive business decisions with data-driven insights.</p>
+                        
+                        <div class="programme-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">12-24 weeks</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Next Cohort:</span>
+                                <span class="detail-value">17th December</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Format:</span>
+                                <span class="detail-value">Remote Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="programme-highlights">
+                            <div class="highlight">Python & R Programming</div>
+                            <div class="highlight">Machine Learning</div>
+                            <div class="highlight">AI & Deep Learning</div>
+                        </div>
+                        
+                        <a href="data-science.html" class="programme-cta">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="programme-card" data-programme="cyber-security">
+                    <div class="programme-hero-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/ltu-data-science-02.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="programme-content">
+                        <h3>Cyber Security</h3>
+                        <p class="programme-subtitle">Protect organizations from digital threats with hands-on security training and real-world projects.</p>
+                        
+                        <div class="programme-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">12-24 weeks</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Next Cohort:</span>
+                                <span class="detail-value">8th September</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Format:</span>
+                                <span class="detail-value">Remote Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="programme-highlights">
+                            <div class="highlight">Offensive Security</div>
+                            <div class="highlight">Risk Management</div>
+                            <div class="highlight">Incident Response</div>
+                        </div>
+                        
+                        <a href="cyber-security.html" class="programme-cta">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="programme-card" data-programme="software-engineering">
+                    <div class="programme-hero-bg" style="background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url('assets/ltu-data-science-15.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="programme-content">
+                        <h3>Software Engineering</h3>
+                        <p class="programme-subtitle">Build scalable applications and systems with full-stack development skills and modern frameworks.</p>
+                        
+                        <div class="programme-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Duration:</span>
+                                <span class="detail-value">12-24 weeks</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Next Cohort:</span>
+                                <span class="detail-value">6th October</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Format:</span>
+                                <span class="detail-value">Remote Learning</span>
+                            </div>
+                        </div>
+                        
+                        <div class="programme-highlights">
+                            <div class="highlight">React & JavaScript</div>
+                            <div class="highlight">Full-Stack Development</div>
+                            <div class="highlight">Cloud Deployment</div>
+                        </div>
+                        
+                        <a href="software-engineering.html" class="programme-cta">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories" id="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Real Graduate Success Stories</h2>
+                <p>See how our graduates transformed their careers and landed roles at leading companies.</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="assets/grads/uc-case-study-bio-FELICIA-FEL.png" alt="Felicia Fel Success Story" />
+                    </div>
+                    <div class="story-content">
+                        <h3>Felicia Fel</h3>
+                        <p class="story-role">Design → Software Engineering</p>
+                        <p class="story-quote">"The Institute of Data Software Engineering Programme was more in-depth than any other programme. It gave me the confidence to excel in my coding test."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <span class="outcome-label">Role:</span>
+                                <span class="outcome-value">Front-End Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="assets/grads/uc-case-study-bio-jan.png" alt="Jan Mazdin Success Story" />
+                    </div>
+                    <div class="story-content">
+                        <h3>Jan Mazdin</h3>
+                        <p class="story-role">IT Enthusiast → Cyber Security Leader</p>
+                        <p class="story-quote">"I wanted to focus on cyber security which had experienced a boom. The Institute of Data programme gave me the local experience I needed."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <span class="outcome-label">Role:</span>
+                                <span class="outcome-value">Cyber Security Leader</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="assets/grads/uc-case-study-bio-avril.png" alt="Avril Maleham Success Story" />
+                    </div>
+                    <div class="story-content">
+                        <h3>Avril Maleham</h3>
+                        <p class="story-role">Hairdressing → Software Engineering</p>
+                        <p class="story-quote">"After 16 years in hairdressing, I realized my true calling was in tech. The opportunities afforded to me have been awesome."</p>
+                        <div class="story-outcome">
+                            <div class="outcome-item">
+                                <span class="outcome-label">Role:</span>
+                                <span class="outcome-value">Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stories-cta">
+                <a href="case-studies.html" class="cta-button">View All Success Stories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institute of Data Partnership -->
+    <section class="partnership-section" id="partnership">
+        <div class="container">
+            <div class="partnership-content">
+                <div class="partnership-left">
+                    <h2>Powered by Industry Excellence</h2>
+                    <p class="partnership-subtitle">University of Canterbury partners with Institute of Data to deliver industry-leading tech education that meets the demands of today's rapidly evolving job market.</p>
+                    
+                    <div class="partnership-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Industry-Designed Curriculum</h4>
+                                <p>Course content developed by experts with decades of industry experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👨‍🏫</div>
+                            <div class="feature-content">
+                                <h4>Expert Trainers</h4>
+                                <p>Learn from professionals actively working in leading tech companies</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📜</div>
+                            <div class="feature-content">
+                                <h4>Dual Certification</h4>
+                                <p>Receive both UC Certificate and Institute of Data Industry Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="partnership-right">
+                    <div class="partnership-logos">
+                        <img src="assets/uc-online-logo (1).svg" alt="University of Canterbury" class="uc-logo" />
+                        <div class="partnership-plus">+</div>
+                        <img src="assets/iod_seal_tp_black_c.svg" alt="Institute of Data" class="iod-logo" />
+                    </div>
+                    <p class="partnership-tagline">University Excellence + Industry Expertise</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="homepage-faqs" id="faqs">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to the most common questions about our programmes.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What programmes do you offer?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer three industry-leading programmes: Data Science & AI, Cyber Security, and Software Engineering. Each programme is available in both full-time (12 weeks) and part-time (24 weeks) formats.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need prior experience in tech?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No prior tech experience is required. Our programmes are designed for career changers and include comprehensive pre-work to bring everyone up to speed, regardless of their background.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the job placement success rate?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We have a 93% job outcome success rate within 180 days of graduation for active job seekers. Over 1000+ employers have hired our certified professionals.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are the programmes taught online?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all programmes are available remotely with an interactive format featuring virtual break-out rooms, shared screens, digital whiteboards, and full instructor support.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What certifications will I receive?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll receive both a University of Canterbury Tuihono UC Online Certificate of Completion and an Institute of Data Industry Certification, signaling to employers that you're ready for the industry.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is job placement support included?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all programmes include comprehensive job outcomes support with dedicated career coaches, industry networking events, and targeted employer engagement to help you land your ideal role.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New CTA Section -->
+    <section class="cta-urgent" id="cta-urgent">
+        <div class="container">
+            <div class="cta-urgent-content">
+                <h2>40% of employers already plan to shrink headcount where AI can automate tasks.</h2>
+                <p>Stay ahead of the curve. Get the skills you need to thrive in the AI era.</p>
+                <form class="cta-urgent-form" id="ctaUrgentForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-white">Download Course Outline</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="assets/uc-online-logo (1).svg" alt="University of Canterbury" class="footer-logo">
+                    <p>University of Canterbury<br>
+                    Private Bag 4800<br>
+                    Christchurch 8140<br>
+                    New Zealand</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><a href="data-science.html">Data Science & AI</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="software-engineering.html">Software Engineering</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Schedule a Call</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Programme Partner</h4>
+                    <img src="assets/iod_seal_tp_black_c.svg" alt="Institute of Data Seal" class="partner-seal">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© University of Canterbury. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Footer -->
+    <div class="sticky-cta" id="stickyCTA">
+        <div class="container">
+            <form class="sticky-form" id="stickyForm">
+                <div class="sticky-form-initial">
+                    <h3>Ready to transform your career?</h3>
+                    <button type="button" class="expand-form">Get Started Today</button>
+                </div>
+                <div class="sticky-form-expanded">
+                    <div class="expanded-left">
+                        <button type="button" class="close-form" aria-label="Close form">×</button>
+                    </div>
+                    <div class="expanded-right">
+                        <input type="email" placeholder="Email*" required>
+                        <input type="text" placeholder="First name*" required>
+                        <input type="tel" placeholder="Phone number*" required>
+                        <button type="submit">Get Started Today</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

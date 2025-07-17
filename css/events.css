@@ -1,0 +1,534 @@
+/* Events Page Styles */
+
+/* Events Hero */
+.events-hero {
+    background: linear-gradient(135deg, var(--secondary-black) 0%, #333333 100%);
+    color: var(--white);
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+}
+
+.events-hero-content h1 {
+    font-family: var(--font-headings);
+    font-size: var(--h1-size);
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.events-hero-subtitle {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Upcoming Events */
+.upcoming-events {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: var(--spacing-xl);
+}
+
+.event-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.event-card:hover {
+    box-shadow: var(--box-shadow-hover);
+    transform: translateY(-4px);
+}
+
+.event-card.featured {
+    border: 2px solid var(--primary-red);
+    position: relative;
+}
+
+.event-card.featured::before {
+    content: "Featured Event";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary-red);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.event-badge {
+    background: var(--light-gray);
+    color: var(--secondary-black);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.event-status {
+    color: var(--primary-red);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.event-content {
+    padding: 2rem;
+}
+
+.event-content h3 {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.event-description {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-details {
+    margin-bottom: 1.5rem;
+}
+
+.event-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.detail-icon {
+    font-size: 1.25rem;
+    width: 30px;
+    text-align: center;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 0.95rem;
+    color: var(--secondary-black);
+    font-weight: 600;
+}
+
+.event-agenda {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--light-gray);
+    border-radius: var(--border-radius);
+}
+
+.event-agenda h4 {
+    font-family: var(--font-headings);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.event-agenda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-agenda li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+.event-agenda li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+.event-register-btn {
+    width: 100%;
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.event-register-btn:hover {
+    background: color-mix(in srgb, var(--primary-red) 90%, black);
+}
+
+/* Consultation Section */
+.consultation-section {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.consultation-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.consultation-left h2 {
+    font-family: var(--font-headings);
+    font-size: var(--h2-size);
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.consultation-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.consultation-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.benefit-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.benefit-content h4 {
+    font-family: var(--font-headings);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-black);
+}
+
+.benefit-content p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.consultation-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+}
+
+.consultation-card h3 {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-black);
+    text-align: center;
+}
+
+.consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+    padding: 0.75rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 3px rgba(206, 62, 46, 0.1);
+}
+
+.consultation-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.consultation-submit-btn {
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.consultation-submit-btn:hover {
+    background: color-mix(in srgb, var(--primary-red) 90%, black);
+}
+
+/* Event Format */
+.event-format {
+    padding: var(--spacing-xxl) 0;
+    background: var(--light-gray);
+}
+
+.format-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: var(--spacing-xl);
+}
+
+.format-feature {
+    text-align: center;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--box-shadow);
+}
+
+.format-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.format-feature h3 {
+    font-family: var(--font-headings);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary-black);
+}
+
+.format-feature p {
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* Past Events */
+.past-events {
+    padding: var(--spacing-xxl) 0;
+    background: var(--white);
+}
+
+.past-events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.past-event-card {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid var(--primary-red);
+}
+
+.past-event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.past-event-header h3 {
+    font-family: var(--font-headings);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secondary-black);
+}
+
+.past-event-date {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.past-event-card p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.past-event-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.watch-recording-btn,
+.download-slides-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-red);
+    border-radius: var(--border-radius);
+    background: transparent;
+    color: var(--primary-red);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.watch-recording-btn:hover,
+.download-slides-btn:hover {
+    background: var(--primary-red);
+    color: var(--white);
+}
+
+/* Newsletter Signup */
+.newsletter-signup {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: var(--border-radius-lg);
+}
+
+.newsletter-signup h3 {
+    font-family: var(--font-headings);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-black);
+}
+
+.newsletter-signup p {
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+}
+
+.newsletter-form button {
+    background: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.newsletter-form button:hover {
+    background: color-mix(in srgb, var(--primary-red) 90%, black);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .events-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .events-hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .consultation-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .format-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .past-events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .past-event-actions {
+        flex-direction: column;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .event-content {
+        padding: 1.5rem;
+    }
+    
+    .consultation-card {
+        padding: 1.5rem;
+    }
+    
+    .format-feature {
+        padding: 1.5rem;
+    }
+}
